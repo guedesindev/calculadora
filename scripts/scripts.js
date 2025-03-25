@@ -264,3 +264,9 @@ function criarDecimal() {
     numberDisplay.textContent += '.'
   }
 }
+
+console.log(
+  '%c🚀Olá, Dev!%c\n\n🤵 Sou DevGuedes, freelancer developer. Quer criar algo fantástico juntos?\n📧 Entre em contato: guedesindev@gmail.com',
+  'color:#fff; background:#000; font-size:16px; font-weight: bold; padding:8px;border-radius:5px;',
+  'color:#0f0; background:$fff; font-size:16px'
+)
