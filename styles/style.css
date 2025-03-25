@@ -10,6 +10,7 @@ body {
   height: 100vh;
   background-color: rgb(105, 103, 103);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -161,4 +162,8 @@ main {
   left: auto;
   top: auto;
   transform: translate(-50%, -50%);
+}
+
+footer {
+  color: #a9a9a9;
 }
