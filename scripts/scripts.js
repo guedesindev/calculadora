@@ -20,7 +20,7 @@ function inicializarDisplay() {
 function registrarEventos() {
   teclas.forEach((tecla) => {
     tecla.addEventListener('click', (e) => {
-      processarEntrada(e.target.dataset)
+      processarEntrada(e.currentTarget.dataset)
     })
   })
 }
