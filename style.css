@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  overflow: hidden;
+}
+
+main {
+  box-sizing: border-box;
+  height: 90vh;
+}
+
+.conteiner {
+  box-sizing: border-box;
+  min-width: 19rem;
+  max-width: 25rem;
+  width: 15%;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 90%;
+  margin: auto auto;
+}
+
+#tela {
+  width: 100%;
+  min-height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50%;
+  border-radius: 0.5rem;
+  background-color: rgb(61, 61, 73);
+}
+
+#tela > span {
+  padding: 0.5rem;
+}
+
+#operation-display {
+  font-size: 1.1rem;
+  color: #b8b81aa8;
+}
+
+#number-display {
+  text-align: end;
+  font-size: 3rem;
+}
+
+#teclado {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.teclas {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.teclas > button {
+  position: relative;
+}
+
+/* .teclas > button > img {
+  position: absolute;
+  top: 0;
+  left: -2px;
+} */
+
+.op-adicionais {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  overflow: hidden;
+}
+
+.operacoes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s ease-in-out, opcity 0.3s ease-in-out;
+}
+
+.operacoes-container.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.teclado-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0;
+  transition: margin-top 0.3s ease-in-out;
+}
+
+.comprimido {
+  margin-top: -100px;
+}
+
+.tecla {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+[data-op]:hover {
+  color: beige;
+}
+
+.especiais {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgb(19, 18, 18);
+  color: white;
+}
+
+.especiais img {
+  color: white;
+}
+
+.principal {
+  background-color: darkgrey;
+}
+
+.operacao {
+  background-color: lightgrey;
+}
+
+.igualdade {
+  background-color: rgb(74, 74, 189);
+  color: white;
+  font-size: 10rem;
+}
+
+.memoria {
+  background-color: rgb(135, 135, 234);
+}
+
+#backspace,
+#equal {
+  position: absolute;
+  left: auto;
+  top: auto;
+  transform: translate(-50%, -50%);
+}
