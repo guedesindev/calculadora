@@ -26,19 +26,19 @@ Executa a última operação clicada pelo usuário com os números salvos na mem
 
 **_Botões de Operação Básica_**</br>
 
-![plus](../images/plus.svg) - somar</br>
-![minus](../images/minus.svg) - subtrair</br>
-![divide](../images/divide.svg) - divisão</br>
-![multiplicar](../images/xmark.svg) - multiplicação</br>
-![percent](../images/percent.svg) - porcentagem</br>
-![rad](../images/sqrt.svg) - radiciação</br>
-![pot](../images/pot.svg) - potenciação</br>
+![plus](./images/plus.svg) - somar</br>
+![minus](./images/minus.svg) - subtrair</br>
+![divide](./images/divide.svg) - divisão</br>
+![multiplicar](./images/xmark.svg) - multiplicação</br>
+![percent](./images/percent.svg) - porcentagem</br>
+![rad](./images/sqrt.svg) - radiciação</br>
+![pot](./images/pot.svg) - potenciação</br>
 ! - fatorial</br>
 +/- Oposto de um número
 
 **_Botões de Constantes_**
 
-![pi](../images/pi.svg) - PI</br>
+![pi](./images/pi.svg) - PI</br>
 log2 - Logaritmo de base 2</br>
 log10 - Logaritmo de base 10</br>
 ln - Logaritmo de base neperiana</br>
@@ -46,17 +46,18 @@ e - Neper
 
 **_Funções Trigonométricas_**
 
-![sin](../images/wave-sine.svg) - Seno</br>
-![cos](../images/wave-cos.svg) - Cosseno</br>
+![sin](./images/wave-sine.svg) - Seno</br>
+![cos](./images/wave-cos.svg) - Cosseno</br>
 Tan - Tangente
 
-## Tecnologias 
+## Tecnologias
 
 Esta calculadora foi desenvolvida apenas com Html, css e javascript.
 
 ## Estrutura
+
 Tentei estruturar o projeto com um arquivo javascript principal que importa todos os arquivos javascript utilizados no projeto.
 
 Não criei o projeto pensando em reponsividade, assim sendo pode ser que ao usar em dispositivos de diferentes dimensões pode haver inconsistência no layout.
 
-Criei estruturas de dados para obtenção das operações e contantes. Um arquivo somente para operações e outro para constantes. 
+Criei estruturas de dados para obtenção das operações e contantes. Um arquivo somente para operações e outro para constantes.
