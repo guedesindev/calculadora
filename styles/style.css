@@ -5,6 +5,20 @@
   overflow: hidden;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(105, 103, 103);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  box-sizing: border-box;
+  height: 90vh;
+}
+
 .conteiner {
   min-width: 19rem;
   max-width: 25rem;
