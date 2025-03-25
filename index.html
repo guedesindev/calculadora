@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <title>Document</title>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div class="conteiner">
+      <div id="tela">
+        <span id="operation-display"></span>
+        <span id="number-display"></span>
+      </div>
+      <div id="teclado">
+        <div class="teclas op-adicionais">
+          <section class="visibles teclas">
+            <button class="tecla especiais" data-op="raiz"><img src="./images/sqrt.svg" alt="" width="20px"></button>
+            <button class="tecla especiais" data-consts="pi" title="Valor de pi"><img src="./images/pi.svg" alt=""
+                width="20px"></button>
+            <button class="tecla especiais" data-op="^" title="x^y"><img src="./images/pot.svg" alt=""></button>
+            <button class="tecla especiais" data-op="!">!</button>
+            <button class="tecla especiais" title="Exibir outras operações"><img data-op="open"
+                src="./images/arrow_down.svg" alt="" width="50px"></button>
+          </section>
+          <div class="operacoes-container">
+            <section class="teclas">
+              <button class="tecla especiais" data-op="rad" title="graus -> radianos">RAD</button>
+              <button class="tecla especiais" data-op="sin" title="sin"><img src="./images/wave-sine.svg"
+                  alt="Seno"></button>
+              <button class="tecla especiais" data-op="cos" title='cos'><img src="./images/wave-cos.svg"
+                  alt="Cosseno"></button>
+              <button class="tecla especiais" data-op="tan" title="tan">tan</button>
+              <button class="tecla especiais" data-op="oposto">+/-</button>
+            </section>
+            <section class="teclas">
+              <button class="tecla especiais" data-op="inv" title="inverso de n">INV</button>
+              <button class="tecla especiais" data-consts="e" title="neper">e</button>
+              <button class="tecla especiais" data-op="log">log</button>
+              <button class="tecla especiais" data-consts="ln2">ln(2)</button>
+              <button class="tecla especiais" data-consts="ln10">ln(10)</button>
+            </section>
+          </div>
+        </div>
+        <div class="teclado-principal comprimido">
+          <section class="teclas">
+            <button class="tecla memoria" data-signals="clear" title="limpar visor">AC</button>
+            <button class="tecla operacao" data-signals="parentesis" title=" adicionar parêntesis"><img
+                data-signal="parentesis" src="./images/parentesis.svg" alt=""></button>
+            <button class="tecla operacao" title="1º percentual, depois total"><img data-op="%"
+                src="./images/percent.svg" alt="" width="18px"></button>
+            <button class="tecla operacao" data-op="/"><img src="./images/divide.svg" alt=""></button>
+          </section>
+          <section class="teclas">
+            <button class="tecla principal" data-num=7>7</button>
+            <button class="tecla principal" data-num=8>8</button>
+            <button class="tecla principal" data-num=9>9</button>
+            <button class="tecla operacao" data-op="*"><img src="./images/xmark.svg" alt=""></button>
+          </section>
+          <section class="teclas">
+            <button class="tecla principal" data-num=4>4</button>
+            <button class="tecla principal" data-num=5>5</button>
+            <button class="tecla principal" data-num=6>6</button>
+            <button class="tecla operacao" data-op="-"><img src="./images/minus.svg" alt=""></button>
+          </section>
+          <section class="teclas">
+            <button class="tecla principal" data-num=1>1</button>
+            <button class="tecla principal" data-num=2>2</button>
+            <button class="tecla principal" data-num=3>3</button>
+            <button class="tecla operacao" data-op="+"><img src="./images/plus.svg" alt=""></button>
+          </section>
+          <section class="teclas">
+            <button class="tecla principal" data-num=0>0</button>
+            <button class="tecla principal" title="adicionar ponto flutuante" data-signals=","><img
+                src="./images/coma.svg" alt=""></button>
+            <button class="tecla principal" data-op="back"><img id="backspace" src="./images/backspace.svg" alt=""
+                width="20px" /></button>
+            <button class="tecla igualdade" data-signals="="><img id="equal" src="./images/equal.svg" alt=""
+                width="40px"></button>
+          </section>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
